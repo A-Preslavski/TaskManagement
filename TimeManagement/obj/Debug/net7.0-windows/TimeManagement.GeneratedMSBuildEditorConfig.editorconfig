@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TimeManagement
-build_property.ProjectDir = D:\Repositories\TimeManagement\TimeManagement\
+build_property.ProjectDir = D:\Repositories\TaskManagement\TimeManagement\

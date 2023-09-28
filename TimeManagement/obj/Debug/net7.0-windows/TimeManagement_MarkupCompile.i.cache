@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Repositories\TimeManagement\TimeManagement\obj\Debug\net7.0-windows\
+D:\Repositories\TaskManagement\TimeManagement\obj\Debug\net7.0-windows\
 TimeManagement
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-D:\Repositories\TimeManagement\TimeManagement\App.xaml
+D:\Repositories\TaskManagement\TimeManagement\App.xaml
 11407045341
 
 8647807282
-2331656340957
+233-51422338
 MainWindow.xaml;
 
 True

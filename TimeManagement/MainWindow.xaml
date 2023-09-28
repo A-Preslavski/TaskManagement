@@ -1,0 +1,24 @@
+﻿<Window x:Class="TimeManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1600">
+    <StackPanel FocusManager.FocusedElement="{Binding ElementName=Box}">
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" Height="673" Margin="950,57,0,0" Stroke="Black" VerticalAlignment="Top" Width="613"/>
+            <TextBox x:Name="TaskHeader" HorizontalAlignment="Left" Height="165" Margin="977,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="556" KeyDown="OnTaskHeaderEnterPress" />
+            <TextBox x:Name="TaskDescription" HorizontalAlignment="Left" Height="213" Margin="977,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="556" KeyDown="OnTaskDescriptionEnterPress" />
+            <Button x:Name="SaveButton" Content="Запази" HorizontalAlignment="Left" Height="36" Margin="1242,676,0,0" VerticalAlignment="Top" Width="142" Click="OnCreateButtonClick"/>
+            <Button x:Name="DeleteButton" Content="Изтрий" HorizontalAlignment="Left" Margin="1394,676,0,0" VerticalAlignment="Top" Height="36" Width="139" Click="OnDeleteButtonClick"/>
+            <DataGrid x:Name="TasksGrid" ItemsSource="{Binding}" AlternatingRowBackground="LightBlue" Margin="10,57,655,0" SelectionChanged="OnGridSelectionChanged"/>
+            <Button x:Name="LoadButton" Content="Зареди" HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Click="OnLoadDataButtonClick" Height="28" Width="94" />
+            <TextBox x:Name="FromTimeText" HorizontalAlignment="Left" Margin="977,492,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="279" Height="60" KeyDown="OnFromTimeTextEnterPress" />
+            <TextBox x:Name="ToTimeText" HorizontalAlignment="Left" Margin="1261,492,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="272" Height="60" KeyDown="OnToTimeTextEnterPress" />
+            <Label Content="От:" HorizontalAlignment="Left" Margin="977,458,0,0" VerticalAlignment="Top" Height="34" Width="101"/>
+            <Label Content="До:" HorizontalAlignment="Left" Margin="1261,458,0,0" VerticalAlignment="Top" Height="34" Width="101"/>
+        </Grid>
+    </StackPanel>
+</Window>
